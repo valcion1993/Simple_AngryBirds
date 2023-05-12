@@ -244,7 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageMultiplier: 10
   shootSound: {fileID: 8300000, guid: a5e58e37029711747952c2247848cab6, type: 3}
-  radius: 3
+  radius: 1.5
   baseDamage: 50
   damageFalloff: 5
   explosionForce: 10

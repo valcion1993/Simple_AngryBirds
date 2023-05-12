@@ -17,6 +17,9 @@ public class FloatingTextManager : MonoBehaviour
 
 	public void ShowFloatingText(string text, Vector3 pos)
 	{
+		if (string.IsNullOrEmpty(text) || text == "0")
+			return;
+
 		for (int i = 0; i < floatingText.Length; i++)
 		{
 			if (!floatingText[i].isPlaying)

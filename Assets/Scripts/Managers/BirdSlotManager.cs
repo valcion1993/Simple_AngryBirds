@@ -4,25 +4,26 @@ using UnityEngine;
 
 public class BirdSlotManager : MonoBehaviour
 {
-    public static BirdSlotManager instance;
+	public static BirdSlotManager instance;
 
-    [Header("Slot drops")]
-    public SlotDrop [] Slots;
+	[HideInInspector] public SlotDrop[] Slots;
 
-    // Start is called before the first frame update
-    void Awake()
-    {
-        instance = this;
-    }
+	// Start is called before the first frame update
+	void Awake()
+	{
+		instance = this;
 
-    public bool EquipedBird() 
-    {
+		Slots = GetComponentsInChildren<SlotDrop>();
+	}
+
+	public bool EquipedBird()
+	{
 		for (int i = 0; i < Slots.Length; i++)
 		{
-            if (Slots[i].equipedItem)
-                return true;
+			if (Slots[i].equipedItem)
+				return true;
 		}
 
-        return false;
-    }
+		return false;
+	}
 }

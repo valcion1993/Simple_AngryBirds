@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class RedBird : BirdBase
+public class RedBird : Bird
 {
 	protected override void PowerUp()
 	{

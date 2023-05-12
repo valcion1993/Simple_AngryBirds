@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ExplosiveBird : BirdBase
+public class ExplosiveBird : Bird
 {
 	[Header("Explosive settings")]
 	[SerializeField] private float radius;

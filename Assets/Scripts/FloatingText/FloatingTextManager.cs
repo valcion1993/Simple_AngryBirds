@@ -7,12 +7,14 @@ public class FloatingTextManager : MonoBehaviour
 {
 	public static FloatingTextManager instance;
 
-	[SerializeField] private FloatingText[] floatingText;
+	private FloatingText[] floatingText;
 	[SerializeField] private float textDuration = 0.5f;
 	// Start is called before the first frame update
 	void Awake()
 	{
 		instance = this;
+
+		floatingText = GetComponentsInChildren<FloatingText>();
 	}
 
 	public void ShowFloatingText(string text, Vector3 pos)

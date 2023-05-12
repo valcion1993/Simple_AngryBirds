@@ -6,19 +6,13 @@ public class AudioManager : MonoBehaviour
 {
 	public static AudioManager instance;
 
-	[Header("Audio Components")]
-	[SerializeField] private AudioSource musicAudio;
-	[SerializeField] private AudioSource[] fxAudioPool;
+	private AudioSource[] fxAudioPool;
 
 	void Awake()
 	{
 		instance = this;
-	}
 
-	public void PlayMusic(AudioClip clip)
-	{
-		musicAudio.clip = clip;
-		musicAudio.Play();
+		fxAudioPool = GetComponentsInChildren<AudioSource>();
 	}
 
 	public void PlayFx(AudioClip clip)

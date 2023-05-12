@@ -5,7 +5,7 @@ using Assets.Scripts;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(TrailRenderer))]
 [RequireComponent(typeof(CircleCollider2D))]
-public class BirdBase : MonoBehaviour
+public class Bird : MonoBehaviour
 {
 	public BirdState State { get; private set; }
 

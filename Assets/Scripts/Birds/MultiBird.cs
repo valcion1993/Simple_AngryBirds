@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class MultiBird : BirdBase
+public class MultiBird : Bird
 {
 	[Header("Multi shoots")]
 	[SerializeField] private GameObject shooPrefab;

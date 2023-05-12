@@ -7,7 +7,7 @@ public class SlingShot : MonoBehaviour
 	public Transform BirdWaitPosition;
 
 	[HideInInspector]
-	public BirdBase BirdToThrow;
+	public Bird BirdToThrow;
 
 	[HideInInspector]
 	public float TimeSinceThrown;
@@ -202,7 +202,7 @@ public class SlingShot : MonoBehaviour
 	{
 		Vector3 velocity = slingshotMiddleVector - BirdToThrow.transform.position;
 
-		BirdToThrow.GetComponent<BirdBase>().ShootBird(velocity, ThrowSpeed, distance);
+		BirdToThrow.GetComponent<Bird>().ShootBird(velocity, ThrowSpeed, distance);
 
 		if (BirdThrown != null)
 			BirdThrown(this, EventArgs.Empty);

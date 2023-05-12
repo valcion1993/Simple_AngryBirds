@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
 					x.destroy();
 					CurrentGameState = GameState.Playing;
 					slingshot.enabled = true;
-					slingshot.BirdToThrow = Birds[currentBirdIndex].GetComponent<BirdBase>();
+					slingshot.BirdToThrow = Birds[currentBirdIndex].GetComponent<Bird>();
 				});
 	}
 

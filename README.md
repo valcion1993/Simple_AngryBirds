@@ -1,4 +1,4 @@
-# Simple_AngryBirds
+# Simple AngryBirds
 Simple Angry Birds game clone
 
 *Refracted the code, in which it was totally messed up in some classes.
